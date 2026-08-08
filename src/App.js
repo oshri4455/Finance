@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import {ghpages} from 'gh-pages';
 import { useState,useEffect } from 'react';
 import Table from './components/Table';
 import Package1 from './components/Package1';
