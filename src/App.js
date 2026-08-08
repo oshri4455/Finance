@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import {HashRouter,Routes,Route} from 'react-router-dom'
 import { useState,useEffect } from 'react';
 import Table from './components/Table';
 import Package1 from './components/Package1';
@@ -316,7 +316,7 @@ const clearTable = () => {
    
 
 
-    <BrowserRouter>
+    <HashRouter>
     <Routes>
     <Route basename="/financeApp" path='/' element = {<Home addUsers = {addUsers} users = {users} getName = {getName}      />}         />
     {users.map((val, index) => {
@@ -347,7 +347,7 @@ return <Route    path={`/user/${val.userName}`} element={<Table row={row} id = {
 
 
 
-</BrowserRouter>
+</HashRouter>
 
 
 
